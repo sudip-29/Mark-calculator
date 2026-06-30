@@ -54,7 +54,7 @@ function calculate() {
 
         <b>Best of CA3 & CA4:</b> ${best2}<br>
 
-        <b>Average (Whole Number):</b> ${average}<br>
+        <b>Average (Approx):</b> ${average}<br>
 
         <b>Attendance Marks:</b> ${attendanceMarks}<br>
 
