@@ -3,35 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pass Mark Calculator</title>
-
+    <title>CA Pass Mark Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="container">
+    <h1>CA Pass Mark Calculator</h1>
 
-    <h2>CA Pass Mark Calculator</h2>
+    <div class="input-group">
+        <label>CA 1 (0-25 or N)</label>
+        <input type="text" id="ca1" placeholder="Example: 20 or N">
+    </div>
 
-    <input type="text" id="ca1" placeholder="CA1 Mark (0-25 or N)">
-    <input type="text" id="ca2" placeholder="CA2 Mark (0-25 or N)">
-    <input type="text" id="ca3" placeholder="CA3 Mark (0-25 or N)">
-    <input type="text" id="ca4" placeholder="CA4 Mark (0-25 or N)">
+    <div class="input-group">
+        <label>CA 2 (0-25 or N)</label>
+        <input type="text" id="ca2" placeholder="Example: 18 or N">
+    </div>
 
-    <label>How many CA did you attend?</label>
+    <div class="input-group">
+        <label>CA 3 (0-25 or N)</label>
+        <input type="text" id="ca3" placeholder="Example: 22 or N">
+    </div>
 
-    <select id="attendance">
-        <option value="0">0</option>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-    </select>
+    <div class="input-group">
+        <label>CA 4 (0-25 or N)</label>
+        <input type="text" id="ca4" placeholder="Example: 17 or N">
+    </div>
+
+    <div class="input-group">
+        <label>How many CA did you attend?</label>
+        <select id="attendance">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+    </div>
 
     <button onclick="calculate()">Calculate</button>
 
-    <div class="result" id="output"></div>
-
+    <div id="result" class="result"></div>
 </div>
 
 <script src="script.js"></script>
