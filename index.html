@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pass Mark Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h2>CA Pass Mark Calculator</h2>
+
+    <input type="text" id="ca1" placeholder="CA1 Mark (0-25 or N)">
+    <input type="text" id="ca2" placeholder="CA2 Mark (0-25 or N)">
+    <input type="text" id="ca3" placeholder="CA3 Mark (0-25 or N)">
+    <input type="text" id="ca4" placeholder="CA4 Mark (0-25 or N)">
+
+    <label>How many CA did you attend?</label>
+
+    <select id="attendance">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+    </select>
+
+    <button onclick="calculate()">Calculate</button>
+
+    <div class="result" id="output"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
